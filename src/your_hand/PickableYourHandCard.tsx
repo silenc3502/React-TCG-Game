@@ -266,9 +266,9 @@ const PickableYourHandCard: React.FC = () => {
                     const index = selectedCardObject.index;
                     const cardAttachedList = battleFieldCardRepository.getCardAttachedInfo(index.toString());
 
-                    cardAttachedList?.attachedMeshes?.forEach(attachedMesh => {
-                        attachedMesh.mesh.position.set(initialCardPosition.x, initialCardPosition.y, 0);
-                    });
+                    // cardAttachedList?.attachedMeshes?.forEach(attachedMesh => {
+                    //     attachedMesh.mesh.position.set(initialCardPosition.x, initialCardPosition.y, 0);
+                    // });
 
                     setCardAttachedList(cardAttachedList);
                 }
