@@ -9,6 +9,7 @@ import EddiTcgMyCard from "./eddi_tcg_my_card/EddiTcgMyCard";
 import EddiTcgBattleField from "./eddi_tcg_battle_field/EddiTcgBattleField";
 import LoginPage from "./oauth/LoginPage";
 import AfterKakaoLoginRequest from "./oauth/kakao/AfterKakaoLoginRequest";
+import ThreeRectangleTest from "./shape/test/ThreeRectangleTest";
 
 const theme = createTheme({
     typography: {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
                     <Route path="/eddi-tcg-battle-field" element={<EddiTcgBattleField />} />
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/kakao" element={<AfterKakaoLoginRequest />} />
+                    <Route path="/test-rectangle" element={<ThreeRectangleTest />} />
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
